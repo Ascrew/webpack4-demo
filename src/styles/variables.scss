@@ -1,0 +1,65 @@
+// global
+$mainColor: #1B65B9;  //主题色
+$secondaryColor: #3CA0F6;  //辅助色
+$gradientColor: #3B71E8;  //渐变色
+$successColor: #67C23A; // 成功色
+$warningColor: #E6A23C; // 警告色
+$errorColor: #F56C6C; // 危险色
+$headerTextColor: #303133;  //标题色
+$mainTextColor: #606266;  //正文色
+$secondaryTextColor: #909399;  //辅助文字色
+$mainBorderColor: #B6B7B9;//边框色
+$mainBackgroundColor: #F0F2F5;//背景色
+
+
+// sidebar
+$menuText:#90cafa; //默认菜单颜色
+$menuActiveText:$mainBackgroundColor; //一级标题active
+$subMenuActiveText:$mainBackgroundColor; //分级标题active
+$menuBg: #174C88; //菜单背景色
+$menuHover: #346eb6; //菜单hover色
+$subMenuBg: $menuBg; //分级菜单背景色
+$subMenuHover: $secondaryColor; //分级菜单hover色
+$subMenuBorder:#144d97; // 菜单下边线
+$sideBarWidth: 210px; //sidebar展开width
+$sideBarWidthMax: 280px; // 二次展开的最大width(不需要二次展开的直接给sideBarWidth相同即可)
+$sideBarHideWidth: 54px; //sidebar收起width
+$sideBarItemHeight: 40px; // 侧边栏高度
+$homeSidebarWidth: 106px; // 首页侧边栏宽度
+
+//header
+$headerNavHeight: 56px; // header导航nav高度
+$headerTabHeight: 30px; // header导航nav-tab高度
+$headerTabColor: #3274c3; // header-tab颜色
+$headerTabHover:#4D88FF; // header-tab-hover颜色
+
+
+:export {
+  mainColor: $mainColor;
+  secondaryColor: $secondaryColor;
+  successColor: $successColor;
+  warningColor: $warningColor;
+  errorColor: $errorColor;
+  headerTextColor: $headerTextColor;
+  mainTextColor: $mainTextColor;
+  secondaryTextColor: $secondaryTextColor;
+  mainBorderColor: $mainBorderColor;
+  mainBackgroundColor: $mainBackgroundColor;
+
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+  subMenuBorder: $subMenuBorder;
+  sideBarWidthMax: $sideBarWidthMax;
+  homeSidebarWidth: $homeSidebarWidth;
+
+  headerNavHeight: $headerNavHeight;
+  headerTabHeight: $headerTabHeight;
+  headerTabColor: $headerTabColor;
+  headerTabHover: $headerTabHover;
+}

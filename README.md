@@ -1,0 +1,1 @@
+- 真正的app入口实在模板 public/index.html 中的 div#app 中所以 App.vue中div的id名称不重要

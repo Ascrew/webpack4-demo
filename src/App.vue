@@ -1,6 +1,10 @@
 <template>
-  <div id="app">
-    <p class="root">{{ text }}</p>
+  <div>
+    <div class="root">
+      <div class="box1"></div>
+      <div class="box2"></div>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -8,7 +12,7 @@
 export default {
   data() {
     return {
-      text: '1234'
+      text: '123aaa4'
     }
   }
 }

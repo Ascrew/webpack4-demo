@@ -13,6 +13,29 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.scss$/,
+        use: [
+          'vue-style-loader',
+          // {
+          //   loader: 'css-loader',
+          //   options: {
+          //     modules: {
+          //       localIdentName: '[local]_[hash:8]'
+          //     },
+          //   }
+          // },
+          'css-loader',
+          'sass-loader',
+          // 自动引入 scss 
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: './src/styles/index.scss'
+            }
+          }
+        ]
+      },
+      {
         test: /\.vue$/,
         use: ['vue-loader']
       },
@@ -85,16 +108,20 @@ const config = {
       }
     ]
   },
+  resolve: {
+    alias: {
+      '@': path.join(__dirname, './src')
+    }
+  },
   devServer: {
-    port: 3000,
     host: '127.0.0.1',
     hot: true,
-    open: true
+    open: false 
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: path.resolve(__dirname, './src/public/index.html')
+      template: path.resolve(__dirname, './public/index.html')
     }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
